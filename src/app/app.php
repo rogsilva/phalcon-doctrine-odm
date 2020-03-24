@@ -8,6 +8,7 @@
 /**
  * Add your routes here
  */
+
 $app->get('/', function () {
     return 'Wellcome!';
 });
@@ -15,7 +16,7 @@ $app->get('/', function () {
 /**
  * Not found handler
  */
-$app->notFound(function () use($app) {
+$app->notFound(function () use ($app) {
     $app->response->setStatusCode(404, "Not Found")->sendHeaders();
     return 'Not Found!';
 });

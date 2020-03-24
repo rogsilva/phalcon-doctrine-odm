@@ -9,9 +9,29 @@
         }
     ],
     "require": {
-
+        "php": ">=7.4"
     },
     "require-dev": {
-        "phalcon/devtools": "^4.0"
+        "phalcon/devtools": "^4.0",
+        "squizlabs/php_codesniffer": "^3.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "code:sniffer": "./vendor/bin/phpcs",
+        "code:sniffer:fix": "./vendor/bin/phpcbf"
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
     }
 }
