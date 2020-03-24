@@ -20,7 +20,6 @@ return new \Phalcon\Config([
     'application' => [
         'modelsDir'      => APP_PATH . '/models/',
         'migrationsDir'  => APP_PATH . '/migrations/',
-        'viewsDir'       => APP_PATH . '/views/',
         'baseUri'        => '/',
     ]
 ]);
