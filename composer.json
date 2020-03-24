@@ -1,0 +1,17 @@
+{
+    "name": "bookedplace/bp-profile",
+    "description": "API for user and access management",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Rogério Silva",
+            "email": "ress.rogerio@gmail.com"
+        }
+    ],
+    "require": {
+
+    },
+    "require-dev": {
+        "phalcon/devtools": "^4.0"
+    }
+}

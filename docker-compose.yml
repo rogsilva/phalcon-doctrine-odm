@@ -1,0 +1,25 @@
+
+version: '3.5'
+
+services:
+  app:
+    container_name: app
+    build: .
+    working_dir: /var/www/html
+    volumes:
+      - ./:/var/www/html
+    ports:
+      - '8080:80'
+    expose:
+      - '8080'
+    depends_on:
+      - mongo
+    links:
+      - mongo
+
+  mongo:
+    container_name: mongo
+    image: mongo:4.0
+    command: --noauth
+    ports:
+      - '27017:27017'
