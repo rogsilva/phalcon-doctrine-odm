@@ -26,7 +26,7 @@ $odmConfig->setProxyNamespace('Proxies');
 $odmConfig->setHydratorDir(BASE_PATH . '/hydrators');
 $odmConfig->setHydratorNamespace('Hydrators');
 $odmConfig->setMetadataDriverImpl(AnnotationDriver::create(APP_PATH . '/documents'));
-$odmConfig->setDefaultDB('bookedplace_users');
+$odmConfig->setDefaultDB('bookedplace_profile');
 
 $dm = DocumentManager::create($odmClient, $odmConfig);
 
