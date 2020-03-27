@@ -13,5 +13,6 @@ $loader->registerDirs(
 )->registerNamespaces(
     [
        'App\Controllers' => APP_PATH . '/controllers',
+       'App\Documents' => APP_PATH . '/documents',
     ]
 )->register();

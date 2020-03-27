@@ -82,6 +82,12 @@ $di->setShared('db', function () {
     return new $class($params);
 });
 
+/**
+ * Doctrine document manager
+ */
+$di->setShared('dm', function() {
+    return include APP_PATH . "/config/doctrine.php";
+});
 
 /**
  * If the configuration specify the use of metadata adapter use it or use memory otherwise

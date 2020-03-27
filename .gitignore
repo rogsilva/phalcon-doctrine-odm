@@ -1,2 +1,4 @@
 vendor/
 src/.phalcon
+src/proxies
+src/hydrators
